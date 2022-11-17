@@ -35,7 +35,7 @@ export default function Index() {
 
     }
     useEffect(() => {
-        makeRequest()
+        makeRequest();
     }, [data])
 
     return (

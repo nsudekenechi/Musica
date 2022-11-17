@@ -4,11 +4,12 @@ import "./assets/style.css";
 
 import Index from "./Pages/Index";
 import Single from "./Pages/Single";
-
+import PlayLists from "./Pages/PlayLists";
 import { Route, Routes } from "react-router-dom";
 
+
 export default function App() {
- 
+
   return (
     <>
 
@@ -16,6 +17,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="single/:id" element={<Single />} />
+        <Route path="/PlayLists" element={<PlayLists />} />
       </Routes>
     </>
   )
